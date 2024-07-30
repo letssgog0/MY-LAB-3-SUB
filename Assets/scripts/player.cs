@@ -75,6 +75,32 @@ public class player : MonoBehaviour
         }
 
 
+        if (isGrounded)
+        {
+            anim.SetBool("isJumping", false);
+        }
+        else
+        {
+            anim.SetBool("isJumping", true);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            anim.SetTrigger("Attack2");
+            
+        }
+
+
     }
 
  
